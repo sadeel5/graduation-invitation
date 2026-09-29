@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <meta name="theme-color" content="#f8e9ed">
+
+  <meta
+    name="description"
+    content="تدعوكم والدة سديل غاندي لمشاركتها فرحة تخرّج ابنتها — October 10, 2026"
+  >
+
+  <title>Sadeel Ghandi | Graduation Invitation</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+  >
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Tajawal:wght@400;500;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <!-- الأغنية -->
+  <audio id="backgroundMusic" loop preload="none">
+    <source src="audio/music.mp3" type="audio/mpeg">
+  </audio>
+
+  <!-- زر التحكم بالموسيقى -->
+  <button
+    id="musicToggle"
+    class="music-toggle"
+    type="button"
+    aria-label="تشغيل الموسيقى"
+    aria-pressed="false"
+    hidden
+  >
+    ♫ تشغيل الموسيقى
+  </button>
+
+  <p id="musicStatus" class="music-status" role="status"></p>
+
+  <!-- غلاف الدعوة -->
+  <section class="welcome" id="welcome" aria-label="غلاف الدعوة">
+    <div class="welcome-card">
+      <span class="eyebrow" lang="en">
+        YOU ARE WARMLY INVITED
+      </span>
+
+      <div class="seal" aria-hidden="true">SG</div>
+
+      <p class="welcome-caption">
+        بكلّ حبّ وفخر، تدعوكم والدة
+      </p>
+
+      <h1 class="cover-name" lang="en" dir="ltr">
+        Sadeel Ghandi
+      </h1>
+
+      <p class="cover-subtitle">
+        لمشاركتها فرحة تخرّج ابنتها
+      </p>
+
+      <div class="ornament" aria-hidden="true">
+        <span></span>
+        ✧
+        <span></span>
+      </div>
+
+      <p class="welcome-text">
+        كبرت صغيرتي، وأزهر حلمها،<br>
+        واليوم تكتمل فرحتنا بوجودكم.
+      </p>
+
+      <button
+        class="button primary"
+        id="openInvitation"
+        type="button"
+      >
+        فتح الدعوة
+        <span aria-hidden="true">✧</span>
+      </button>
+
+      <p class="music-hint">
+        تُفتح الدعوة مع الموسيقى ♫
+      </p>
+
+      <span class="welcome-date" lang="en" dir="ltr">
+        OCTOBER 10, 2026
+      </span>
+    </div>
+
+    <p class="cover-note" lang="en">
+      A BEAUTIFUL MILESTONE, SHARED WITH YOU
+    </p>
+  </section>
+
+  <!-- محتوى الدعوة -->
+  <div id="invitation" hidden>
+    <header class="header">
+      <span class="monogram" lang="en">SG</span>
+      <span>فرحةٌ تكتمل بكم</span>
+      <span class="edition" lang="en">CLASS OF 2026</span>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="graduateName">
+        <div class="arch" aria-hidden="true"></div>
+
+        <span class="eyebrow" lang="en">
+          A NEW CHAPTER BEGINS
+        </span>
+
+        <svg
+          class="graduation-cap"
+          viewBox="0 0 100 75"
+          fill="none"
+          aria-hidden="true"
+        >
+          <path d="M8 25 50 6l42 19-42 19L8 25Z"/>
+          <path d="M25 34v19c15 11 35 11 50 0V34"/>
+          <path d="M91 26v29"/>
+          <circle cx="91" cy="59" r="3"/>
+        </svg>
+
+        <p class="invitation-label">
+          بكلّ فخرٍ وامتنان، أدعوكم للاحتفال بتخرّج ابنتي
+        </p>
+
+        <h2
+          class="graduate-name"
+          id="graduateName"
+          tabindex="-1"
+          lang="en"
+          dir="ltr"
+        >
+          Sadeel
+          <span>Ghandi</span>
+        </h2>
+
+        <p class="graduate-tag" lang="en" dir="ltr">
+          THE GRADUATE · CLASS OF 2026
+        </p>
+
+        <div class="ornament" aria-hidden="true">
+          <span></span>
+          ✧
+          <span></span>
+        </div>
+
+        <p class="verse">
+          «وَآخِرُ دَعْوَاهُمْ أَنِ الْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ»
+        </p>
+
+        <p class="mother-message">
+          بالأمس كانت طفلتي التي أحلم بمستقبلها،<br>
+          واليوم أراها خريجةً يملؤني بها الفخر.<br>
+          وبقلب أمٍّ فَرِح، أدعوكم لمشاركتي<br>
+          فرحة تخرّج ابنتي الغالية.
+        </p>
+
+        <div class="degree">
+          <span class="degree-label" lang="en" dir="ltr">
+            PROUDLY GRADUATING IN
+          </span>
+
+          <strong lang="en" dir="ltr">
+            Artificial Intelligence
+          </strong>
+
+          <span class="university-name" lang="en" dir="ltr">
+            American University of Madaba
+          </span>
+        </div>
+
+        <p class="host-note">
+          بدعوةٍ محبّة من والدة الخريجة
+        </p>
+
+        <a class="discover" href="#details">
+          تفاصيل الحفل
+          <span aria-hidden="true">↓</span>
+        </a>
+      </section>
+
+      <section
+        class="details"
+        id="details"
+        aria-labelledby="detailsTitle"
+      >
+        <span class="eyebrow" lang="en">SAVE THE DATE</span>
+
+        <h2 id="detailsTitle">موعدٌ مع الفرح</h2>
+
+        <div class="event-card">
+          <div class="date" lang="en" dir="ltr">
+            <span class="date-month">OCTOBER</span>
+            <strong>10</strong>
+            <span class="date-year">2026</span>
+          </div>
+
+          <div class="event-info">
+            <div>
+              <span class="small-label">مكان الحفل</span>
+              <h3>نادي ضباط ضاحية الرشيد</h3>
+              <p>عمّان، الأردن</p>
+            </div>
+
+            <div class="time-info">
+              <span class="small-label">وقت الحفل</span>
+              <p id="eventTime">يُحدَّد لاحقًا</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- التايمر -->
+        <section
+          class="countdown-section"
+          aria-labelledby="countdownTitle"
+        >
+          <span class="eyebrow" lang="en">
+            COUNTING DOWN TO THE CELEBRATION
+          </span>
+
+          <h3 id="countdownTitle">
+            كلّ لحظة تقرّبنا من الفرحة
+          </h3>
+
+          <div
+            class="timer"
+            id="timer"
+            role="timer"
+            aria-label="الوقت المتبقي لبداية يوم الحفل"
+            aria-live="off"
+            dir="ltr"
+          >
+            <div class="timer-box">
+              <strong id="days">00</strong>
+              <span lang="en">DAYS</span>
+              <small>أيام</small>
+            </div>
+
+            <div class="timer-box">
+              <strong id="hours">00</strong>
+              <span lang="en">HOURS</span>
+              <small>ساعات</small>
+            </div>
+
+            <div class="timer-box">
+              <strong id="minutes">00</strong>
+              <span lang="en">MINUTES</span>
+              <small>دقائق</small>
+            </div>
+
+            <div class="timer-box">
+              <strong id="seconds">00</strong>
+              <span lang="en">SECONDS</span>
+              <small>ثوانٍ</small>
+            </div>
+          </div>
+
+          <p class="timer-note" id="timerNote">
+            العدّ التنازلي لبداية يوم الحفل بتوقيت الأردن؛
+            ساعة الحفل تُحدَّد لاحقًا.
+          </p>
+        </section>
+
+        <div class="actions">
+          <button
+            class="button primary"
+            id="saveDate"
+            type="button"
+          >
+            حفظ التاريخ
+            <span aria-hidden="true">＋</span>
+          </button>
+
+          <button
+            class="button secondary"
+            id="shareInvitation"
+            type="button"
+          >
+            مشاركة الدعوة
+            <span aria-hidden="true">↗</span>
+          </button>
+        </div>
+
+        <p id="status" role="status"></p>
+
+        <div class="closing">
+          <span class="sparkle" aria-hidden="true">✧</span>
+
+          <p>بحضوركم تكتمل فرحتي وفرحة ابنتي</p>
+
+          <span class="signature" lang="en" dir="ltr">
+            With love, Sadeel & her mother
+          </span>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <span lang="en" dir="ltr">Sadeel Ghandi</span>
+      <span aria-hidden="true">✧</span>
+      <span lang="en" dir="ltr">OCTOBER 10, 2026</span>
+    </footer>
+  </div>
+
+  <div id="confetti" aria-hidden="true"></div>
+
+  <noscript>
+    <style>
+      .welcome {
+        display: none;
+      }
+    </style>
+
+    <p class="noscript">
+      تدعوكم والدة Sadeel Ghandi لحفل تخرّج ابنتها
+      في تخصص Artificial Intelligence
+      من American University of Madaba.
+      بتاريخ 10 October 2026،
+      في نادي ضباط ضاحية الرشيد، عمّان.
+      الوقت يُحدَّد لاحقًا.
+      فعّلي JavaScript لعرض الدعوة التفاعلية.
+    </p>
+  </noscript>
+</body>
+</html>
